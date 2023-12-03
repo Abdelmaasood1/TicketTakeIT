@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/movies">
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.finalproject.ui.owner.activity_home.fragments.FragmentOwnerMovies"
+        android:label=""
+        tools:layout="@layout/fragment_owner_movies" />
+    <fragment
+        android:id="@+id/shows"
+        android:name="com.finalproject.ui.owner.activity_home.fragments.FragmentOwnerShows"
+        android:label=""
+        tools:layout="@layout/fragment_owner_shows" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.finalproject.ui.owner.activity_home.fragments.FragmentOwnerBookings"
+        android:label=""
+        tools:layout="@layout/fragment_owner_bookings" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.finalproject.ui.owner.activity_home.fragments.FragmentOwnerProfile"
+        android:label=""
+        tools:layout="@layout/fragment_owner_profile" />
+
+    <activity
+        android:id="@+id/activity_sign_up"
+        android:name="com.finalproject.ui.activity_signup.SignUpActivity"
+        android:label=""
+        tools:layout="@layout/activity_sign_up" />
+
+</navigation>

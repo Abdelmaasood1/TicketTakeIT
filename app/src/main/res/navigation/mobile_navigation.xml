@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentHome"
+        android:label=""
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentMovies"
+        android:label=""
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/shows"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentShows"
+        android:label=""
+        tools:layout="@layout/fragment_shows" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentHistory"
+        android:label=""
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/Profile"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentProfile"
+        android:label=""
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/activity_sign_up"
+        android:name="com.finalproject.ui.activity_signup.SignUpActivity"
+        android:label=""
+        tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/activity_edit_account"
+        android:name="com.finalproject.ui.activity_edit_account.EditAccountActivity"
+        android:label=""
+        tools:layout="@layout/activity_edit_account" />
+
+
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.finalproject.ui.user.activity_home.fragments.FragmentSearch"
+        android:label=""
+        tools:layout="@layout/fragment_search" />
+
+    <activity
+        android:id="@+id/activity_language"
+        android:name="com.finalproject.ui.activity_language.LanguageActivity"
+        android:label=""
+        tools:layout="@layout/activity_language" />
+
+
+
+</navigation>

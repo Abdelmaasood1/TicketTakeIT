@@ -1,0 +1,23 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="String" />
+
+
+    </data>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgSlider"
+        image="@{photo}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="8dp" />
+
+
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="time"
+            type="com.finalproject.model.TimeModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background='@{time.selected?@drawable/selected_bg:@drawable/not_selected_bg}'
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@{time.hour}"
+            android:textSize="12sp"
+            android:textColor='@{time.selected?@color/white:@color/black}'/>
+
+    </LinearLayout>
+</layout>
